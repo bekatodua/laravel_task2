@@ -10,7 +10,7 @@ class BlogController extends Controller
 
     }
 
-    public function showPost(Request $request) {
+    public function showPost(Request $request, $slug) {
 
     }
 }

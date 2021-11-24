@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/blog', [\App\Http\Controllers\BlogController::class, 'showBlog'])->name('blog');
+Route::post('/post/{slug}', [\App\Http\Controllers\BlogController::class, 'showpost'])->name('viewPosts');
